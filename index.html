@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carbon Easy!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+body {font-family: 'Poppins', sans-serif; font-weight: 300; padding:0; height: 100%;}
+h1, h2, h4, h6 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #094240;
+}
+h3, h5{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #00f9f1;
+}
+.custom-colour {color:#000 !important; background-color:#00f9f1 !important}
+.custom-colour-text-theme {color:#00f9f1 !important}
+.custom-colour-border-theme {border-color:#00f9f1 !important}
+.custom-colour-hover-theme:hover {color:#000 !important; background-color:#00f9f1 !important}
+.custom-colour-text-theme:hover {color:#00f9f1 !important}
+.custom-colour-border-theme:hover {border-color:#00f9f1 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#003130 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#004a41 !important}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d4">
+            <img src="Carbon (400 × 200 px).png" alt="Carbon Easy Logo" style="height: 100px;">
+            <div class="w3-right w3-hide-small w3-padding">
+                <a href="#about" class="w3-bar-item w3-button w3-hover-teal w3-round-xlarge "><h3>About</h3></a>
+                <a href="#calculator" class="w3-bar-item w3-button w3-hover-teal w3-round-xlarge "><h3>Calculator</h3></a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hover-teal w3-round-xlarge "><h3>Contact</h3></a>
+                <button onclick="document.getElementById('trigger-modal').style.display='block'" class="w3-bar-item 3-tag w3-light-grey w3-button w3-round-xlarge custom-colour-hover-theme w3-large w3-margin-top">Login/Register</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Page content -->
+
+
+    <!-- About Section -->
+    <div class="w3-cell-row w3-padding-64 w3-margin-top w3-stretch" id="about" style="width:auto">
+        <div class="w3-col m6 w3-padding-large w3-margin-top w3-hide-small" >
+            <img src="luc-dobigeon-BdvZQL0iebM-unsplash.jpg" class="w3-image w3-margin w3-round-xlarge" alt="Clean Sky" style="width: 100%; height:50%;">
+        </div>
+
+        <div class="w3-col m6 w3-padding-64">
+            <img src="Carbon (400 × 200 px).png" class="center" alt="Carbon Easy Logo style="width: 50%; height:50%;><br>
+            <div style="background-color: #004a41" class="w3-center custom-colour-text-theme">
+                <h5>Helping you get to know your carbon output </h5>
+            </div>
+            <div class="w3-cell-row w3-buffer-32">
+                <div class="w3-container w3-cell">
+                    <h2>Who are Carbon Easy?</h2>
+                    <p>Welcome to Carbon Easy, your go-to destination for managing your carbon footprint effortlessly. At Carbon Easy, we believe that taking responsibility for our impact on the environment should be simple and accessible to all. Our company is dedicated to providing individuals and businesses with the tools and knowledge they need to understand, reduce, and offset their carbon emissions.</p>
+                </div>
+      
+                <div class="w3-container w3-cell w3-buffer-32">
+                    <h2>What is a carbon footprint calculator?</h2>
+                    <p>A carbon footprint calculator is a tool that helps individuals or businesses estimate the amount of greenhouse gas emissions they generate through their activities. It assesses various factors such as energy usage, transportation, waste management, and lifestyle choices to quantify the overall impact on the environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Trigger/ Registration Form-->
+    <div class="w3-container">
+        <div id="trigger-modal" class="w3-modal custom-colour-text-theme">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-theme-d4" style="max-width:600px">
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('trigger-modal').style.display='none'" class="w3-button w3-xlarge custom-colour w3-display-topright" title="Close Modal">&times;</span>
+                    <img src="globe.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                </div>
+                    <form class="w3-container" action="/action_page.php">
+                    <div class="w3-section"  id="userInfo">
+                      <label><b>Given Name</b></label>
+                      <input class="w3-input w3-border w3-margin-bottom w3-light-gray" type="text" placeholder="Enter Given name" name="gname" required>
+                      <label><b>Surname</b></label>
+                      <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Surname" name="surname" required>
+                      <label><b>Username</b></label>
+                      <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                      <label><b>Password</b></label>
+                      <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Password" name="psswrd" required>
+                    </div>
+                    <div class="w3-section"  id="addressInfo">
+                        <label><b>Home Address</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Home Address" name="haddr" required>
+                        <label><b>Work Address</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Work Adress" name="waddr">
+                    </div>
+                    <div class="w3-section"  id="contactInfo">
+                        <label><b>Mobile Number</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="+64" name="cellnum">
+                        <label><b>Email</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="example@carboneasy.com" name="email">
+                    </div>
+                    <button class="w3-button w3-block custom-colour w3-section w3-padding" type="submit">Register</button>
+                    <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me        
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
